@@ -76,6 +76,20 @@ namespace IEnumerableAndIEnumerator
             // {
             //     Console.WriteLine(num + " ");
             // }
+
+            // A list of type List<int> initialized with some number
+            List<int> numberList = new List<int>() {8,6,2};
+            // An array of type int[] initialized with some numbers
+            int[] numberArray = new int[] {1,7,1,3};
+
+            // New line
+            Console.WriteLine(" ");
+            // Call CollectionSum() and pass the list to it
+            CollectionSum(numberList);
+
+            Console.WriteLine(" ");
+            // Call CollectionSum() and pass the array to it
+            CollectionSum(numberArray);
         }
 
         static IEnumerable<int> GetCollection(int option)
@@ -109,6 +123,22 @@ namespace IEnumerableAndIEnumerator
                 // Return an array of numbers initialized with some numbers
                 return new int[] { 11, 12, 13, 14, 15 };
             }
+        }
+
+        static void CollectionSum(IEnumerable<int> anyCollection)
+        {
+            // Sum variable to store the sum of the numbers in anyCollection
+            int sum = 0;
+
+            // For-each number in the collection passed to this method
+            foreach (int num in anyCollection)
+            {
+                // Add the num variable to sum
+                sum += num;
+            }
+
+            // Print the sum
+            Console.WriteLine("Sum is {0}", sum);
         }
     }
 

@@ -77,19 +77,19 @@ namespace IEnumerableAndIEnumerator
             //     Console.WriteLine(num + " ");
             // }
 
-            // A list of type List<int> initialized with some number
-            List<int> numberList = new List<int>() {8,6,2};
-            // An array of type int[] initialized with some numbers
-            int[] numberArray = new int[] {1,7,1,3};
+            // // A list of type List<int> initialized with some number
+            // List<int> numberList = new List<int>() {8,6,2};
+            // // An array of type int[] initialized with some numbers
+            // int[] numberArray = new int[] {1,7,1,3};
 
-            // New line
-            Console.WriteLine(" ");
-            // Call CollectionSum() and pass the list to it
-            CollectionSum(numberList);
+            // // New line
+            // Console.WriteLine(" ");
+            // // Call CollectionSum() and pass the list to it
+            // CollectionSum(numberList);
 
-            Console.WriteLine(" ");
-            // Call CollectionSum() and pass the array to it
-            CollectionSum(numberArray);
+            // Console.WriteLine(" ");
+            // // Call CollectionSum() and pass the array to it
+            // CollectionSum(numberArray);
         }
 
         static IEnumerable<int> GetCollection(int option)

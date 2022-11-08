@@ -39,43 +39,43 @@ namespace IEnumerableAndIEnumerator
             //     }
             // }
 
-            // Creating a generic IEnumerable variable that takes any collection of type int.
-            // We will use this variable to store the collections that will get returned by the GetCollection() method
-            IEnumerable<int> unknownCollection;
-            unknownCollection = GetCollection(1);
+            // // Creating a generic IEnumerable variable that takes any collection of type int.
+            // // We will use this variable to store the collections that will get returned by the GetCollection() method
+            // IEnumerable<int> unknownCollection;
+            // unknownCollection = GetCollection(1);
 
-            Console.WriteLine("This was a List<int>");
-            // Foreach number in the collection we got back from GetCollection(1);
-            foreach (int num in unknownCollection)
-            {
-                Console.WriteLine(num + " ");
-            }
+            // Console.WriteLine("This was a List<int>");
+            // // Foreach number in the collection we got back from GetCollection(1);
+            // foreach (int num in unknownCollection)
+            // {
+            //     Console.WriteLine(num + " ");
+            // }
 
-            // New line
-            Console.WriteLine("");
-            // Call GetCollection() with options = 2 which will return a Queue<int>
-            // But we will store it int the base type of generic collections
-            unknownCollection = GetCollection(2);
+            // // New line
+            // Console.WriteLine("");
+            // // Call GetCollection() with options = 2 which will return a Queue<int>
+            // // But we will store it int the base type of generic collections
+            // unknownCollection = GetCollection(2);
 
-            Console.WriteLine("This was a Queue<int>");
-            // For-each number in the collection we got back from GetCollection(2);
-            foreach (int num in unknownCollection)
-            {
-                Console.WriteLine(num + " ");
-            }
+            // Console.WriteLine("This was a Queue<int>");
+            // // For-each number in the collection we got back from GetCollection(2);
+            // foreach (int num in unknownCollection)
+            // {
+            //     Console.WriteLine(num + " ");
+            // }
 
-            // New line
-            Console.WriteLine("");
-            // Call GetCollection() with options = 5 which will return an array <int>
-            // But we will store it in the base type of generic collections
-            unknownCollection = GetCollection(5);
+            // // New line
+            // Console.WriteLine("");
+            // // Call GetCollection() with options = 5 which will return an array <int>
+            // // But we will store it in the base type of generic collections
+            // unknownCollection = GetCollection(5);
 
-            Console.WriteLine("This was a array of int");
-            // For-each number in the collection we got back from GetCollection(5);
-            foreach (int num in unknownCollection)
-            {
-                Console.WriteLine(num + " ");
-            }
+            // Console.WriteLine("This was a array of int");
+            // // For-each number in the collection we got back from GetCollection(5);
+            // foreach (int num in unknownCollection)
+            // {
+            //     Console.WriteLine(num + " ");
+            // }
         }
 
         static IEnumerable<int> GetCollection(int option)
